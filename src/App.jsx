@@ -32,7 +32,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home apparts={apparts} />} />
         <Route path="/about" element={<About />} />
-        <Route path="/logement" element={<Logement />} />
+        <Route path="/logement/:logementId" element={<Logement apparts={apparts}/>} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
