@@ -3,16 +3,35 @@
   height: 111px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+
+
 }
 h2 {
-  display: flex;
+  position: absolute;
+  width: 217px;
+  top: 50%;
+  left: 36px;
+  transform: translateY(-50%);
   z-index: 2;
   color: #fff;
   font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
 }
-@media screen and (min-width: 768px) {
-  .banner {
+.img2 {
+  filter: brightness(50%);
+}
+@media screen and (min-width: 992px) {
+  .banner{
     height: 223px;
     border-radius: 25px;
   }
-}
+  h2{
+    width: 100%;
+    font-size: 48px;
+    display: inline;
+    text-align: center;
+  }
+  }
