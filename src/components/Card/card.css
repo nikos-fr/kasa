@@ -1,0 +1,26 @@
+.card{
+    width: 340px;
+    height: 340px;
+    background: gray;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.card > img {
+    filter: brightness(50%);
+}
+
+h4{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    color: white;
+}
+
+@media screen and (max-width:857px) {
+    .card{
+     align-self: stretch;
+     width: 100%;
+    }
+}
