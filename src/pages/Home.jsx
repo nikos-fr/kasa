@@ -7,6 +7,7 @@ import image1 from "../assets/img1.png"
 
 function Home({ apparts }) {
   const [indexImage, setIndexImage] = useState("")
+  console.log(apparts);
   useEffect(() => {
     setIndexImage(image1)
   },[])

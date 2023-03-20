@@ -16,6 +16,7 @@ h4{
     left: 10px;
     z-index: 2;
     color: white;
+    font-size: 18px;
 }
 
 @media screen and (max-width:857px) {

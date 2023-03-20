@@ -1,5 +1,5 @@
 .home{
-    max-width: 1440px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
 }
@@ -14,11 +14,17 @@
  margin: 30px auto;
  border-radius: 25px;
 }
-@media screen and (max-width:857px) {
+@media screen and (max-width:768px) {
     .cards{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+        padding: 0;
+    }
+    .home{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }

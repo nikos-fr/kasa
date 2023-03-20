@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import image2 from "../assets/banniere2.png"
+import "./about.css"
 
 function About() {
   const [indexImage, setIndexImage] = useState("")

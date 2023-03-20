@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navigate, useParams } from 'react-router-dom'
+import AppartTitle from '../components/AppartTitle/AppartTitle';
 import Carousel from '../components/Carousel/Carousel';
+import Location from '../components/Location/Location';
 import NotFound from '../pages/NotFound';
 import "./logement.css"
 
@@ -11,10 +13,8 @@ function Lodging({apparts}) {
   return appart ? (
     <div className='lodging'>
       <Carousel carouselPictures={appart.pictures} />
-      <div className="ident">
-        <h3>{appart.title}</h3>
-        <p>{appart.location}</p>
-      </div>
+      <AppartTitle title={appart.title} />
+      <Location location={appart.location} />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   ) : (
