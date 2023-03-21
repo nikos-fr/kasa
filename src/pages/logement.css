@@ -3,7 +3,9 @@
   width: 100%;
   margin: 0 auto;
 }
-
+.apparttitle{
+  color: red;
+}
 
 
 @media screen and (max-width: 768px) {
