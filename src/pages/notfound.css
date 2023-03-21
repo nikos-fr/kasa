@@ -1,0 +1,13 @@
+h1 {
+    font-size: 288px;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.txterror{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
