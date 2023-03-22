@@ -10,7 +10,7 @@ function InfosAppart({ appart }) {
         <h3 className="titreAppart">{appart.title}</h3>
         <p className="location">{appart.location}</p>
         <ul className="tags">
-          {appart.tags.map((tag,index) => (
+          {appart.tags.map((tag, index) => (
             <Tag key={index} tag={tag} />
           ))}
         </ul>
@@ -22,7 +22,6 @@ function InfosAppart({ appart }) {
             <img src={appart.host.picture} alt={appart.host.name} />
           </div>
         </div>
-
         <Stars rating={appart.rating} />
       </div>
     </div>

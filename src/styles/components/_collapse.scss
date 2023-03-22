@@ -1,0 +1,7 @@
+@use "../utils/" as *;
+
+.collapse{
+    background: $mainColor;
+    padding: 5px;
+    width: 100%;
+}
