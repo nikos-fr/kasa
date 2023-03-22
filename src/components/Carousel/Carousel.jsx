@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import leftArrow from '../../assets/leftArrow.svg'
-import rightArrow from '../../assets/rightArrow.svg'
-import "./carousel.css"
+import leftArrow from '../../assets/images/svg/left-arrow.svg'
+import rightArrow from '../../assets/images/svg/right-arrow.svg'
 
 function Carousel({carouselPictures}) {
   
@@ -21,7 +20,7 @@ function Carousel({carouselPictures}) {
     <div className='carousel'>
        <img src={leftArrow} alt="left" className={(carouselPictures.length !== 1) ? "left-arrow" : "arrow-invisible"} onClick={decrementImage}/>
        <img src={carouselPictures[indexPic]} alt="/" />
-       <p className='decompte'>{indexPic + 1} / {carouselPictures.length}</p>
+       <p className='quantity'>{indexPic + 1} / {carouselPictures.length}</p>
        <img src={rightArrow} alt="right" className={(carouselPictures.length !== 1) ? "right-arrow" : "arrow-invisible"} onClick={incrementImage}/>
     </div>
   )

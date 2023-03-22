@@ -1,0 +1,31 @@
+.home {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  @media screen and (min-width: 767px) {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 22px 0;
+    padding: 0;
+
+    @media screen and (min-width: 991px) {
+      gap: 30px;
+    }
+    @media screen and (min-width: 767px) {
+      width: 100%;
+      height: auto;
+      margin: 43px 0;
+      background-color: #f6f6f6;
+      padding: 56px 50px;
+      border-radius: 25px;
+    }
+  }
+}

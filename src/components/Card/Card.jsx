@@ -1,14 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./card.css"
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Card({appartCover , appartTitle, appartId}) {
+function Card({appartId, appartTitle, appartCover }) {
+
+  
   return (
-    <Link to={`../logement/${appartId}`} className='card'>
+    <Link className="card" to={'../lodging/'+ appartId } >
+      <div className="cardImg">
         <img src={appartCover} alt={appartTitle} />
-        <h4>{appartTitle}</h4>
+      </div>
+      <h4>{appartTitle}</h4>
     </Link>
-  )
+  );
 }
 
-export default Card
+export default Card;

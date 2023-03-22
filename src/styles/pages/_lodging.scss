@@ -1,0 +1,19 @@
+@use '../utils/' as *;
+
+.lodging {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 20px;
+    @media screen and (min-width: 767px) {
+      
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+      gap: 30px;
+    }
+    
+}
+  
