@@ -43,8 +43,10 @@
       font-size: 14px;
       text-decoration: underline;
     }
+    .active-link {
+      text-decoration: underline;
+      color: $mainColor;
+    }
   }
 }
-active-link {
-  text-decoration: underline;
-}
+
