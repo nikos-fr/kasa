@@ -13,9 +13,14 @@ function Lodging({ apparts }) {
     <div className="lodging">
       <Carousel carouselPictures={appart.pictures} />
       <InfosAppart appart={appart} />
-      <div className="complement">
-        <Collapse />
-        <Collapse />
+      <div className="otherInfo">
+        <Collapse key={appart.id} title="Description" content={appart.description} />
+        <Collapse
+          title="Equipements"
+          content={appart.equipments.map((equi, index) => {
+            return <li key={index}>{equi}</li>;
+          })}
+        />
       </div>
     </div>
   ) : (

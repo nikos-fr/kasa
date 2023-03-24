@@ -10,16 +10,26 @@
         width: 100%;
         height: 223px;
     }
-    .apropos{
-        display: flex;
+    .otherInfo {
         width: 100%;
-        flex-direction: column;
         margin-top: 19px;
+        margin-bottom: 19px;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        @media screen and (min-width: 767px) {
-            padding: 0 108px;
+        @media screen and (min-width:767px) {
             margin-top: 31px;
-            gap: 31px;
+            margin-bottom: 31px;
+            padding: 0 217px;
+            gap: 31px;            
+        }
+        collapse__description {
+            @media screen and (min-width:767px) {
+                max-height: 143px;
+                line-height: 24px;
+                font-size: 24px;
+                padding:52px 18px;
+            }
         }
     }
 }
