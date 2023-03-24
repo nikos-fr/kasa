@@ -1,7 +1,7 @@
 .about {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 110px 20px;
     @media screen and (min-width:767px) {
         max-width: 1240px;
         margin: 0 auto;
@@ -20,7 +20,7 @@
         @media screen and (min-width:767px) {
             margin-top: 31px;
             margin-bottom: 31px;
-            padding: 0 217px;
+            padding: 0 9%;
             gap: 31px;            
         }
         collapse__description {
