@@ -5,46 +5,22 @@ import Lodging from "./pages/Lodging/Lodging";
 import NotFound from "./pages/NotFound/NotFound";
 import Layout from "./pages/Layout/Layout";
 import { useEffect, useState } from "react";
+import apparts from "./assets/datas/appartements.json"
+import dataAbout from "./assets/datas/aboutData.json"
 
 function App() {
-  const [apparts, setApparts] = useState([])
-  const [dataAbout, setDataAbout] = useState([]);
 
-  useEffect(() => {
-    const fetchAbout = async () => {
-      try {
-        const response = await fetch("./datas/aboutData.json");
-        const data = await response.json();
-        setDataAbout(data);
-      } catch (error) {
-        console.log("Une erreur s'est produite");
-      }
-    }
-    setTimeout(fetchAbout, 3000);
-    return () => {};
-  }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('./datas/appartements.json')
-        const data = await(response.json())
-        setApparts(data)
-      } catch (error) {
-        console.log("Une erreur s'est produite");
-      }
-    }
-    setTimeout(fetchData, 3000);
-    return () => {};
-  }, [])
- 
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<Home apparts={apparts}/>} />
-        <Route path="/home" element={<Home apparts={apparts}/>} />
-        <Route path="/about" element={<About dataAbout={dataAbout}/>} />
-        <Route path="/lodging/:logementId" element={<Lodging apparts={apparts} />} />
+        <Route index element={<Home apparts={apparts} />} />
+        <Route path="/home" element={<Home apparts={apparts} />} />
+        <Route path="/about" element={<About dataAbout={dataAbout} />} />
+        <Route
+          path="/lodging/:logementId"
+          element={<Lodging apparts={apparts} />}
+        />
         <Route path="/error" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Route>
